@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "adduser",
 	version: "2.4.3",
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+	credits: "Jayden Smith",
 	description: "Add user to the group by link or id",
 	commandCategory: "group",
 	usages: "[args]",
