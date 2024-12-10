@@ -2,7 +2,7 @@ module.exports.config = {
   name: "animegirl",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+  credits: "𝗧𝗲𝗮𝗺 𝗦𝗺𝗶𝘁𝗵",
   description: "Random Loli Pics",
   commandCategory: "nsfw",
   usages: "lolilewd",
