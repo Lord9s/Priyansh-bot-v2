@@ -3,7 +3,7 @@ module.exports.config = {
 	name: "admin",
 	version: "1.0.5",
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+	credits: "Team Smith",
 	description: "Admin Config",
 	commandCategory: "Admin",
 	usages: "Admin",
@@ -15,7 +15,7 @@ module.exports.config = {
 
 module.exports.languages = {
     "vi": {
-        "listAdmin": `===「 𝗗𝗔𝗡𝗛 𝗦𝗔́𝗖𝗛 𝗔𝗗𝗠𝗜𝗡 」===\n━━━━━━━━━━━━━━━\n%1\n\n==「 𝗡𝗚𝗨̛𝗢̛̀𝗜 𝗛𝗢̂̃ 𝗧𝗥𝗢̛̣ 𝗕𝗢𝗧 」==\n━━━━━━━━━━━━━━━\n%2`,
+        "listAdmin": `===「 𝗝𝗮𝘆𝗱𝗲𝗻 𝗦𝗺𝗶𝘁𝗵 」===\n━━━━━━━━━━━━━━━\n%1\n\n==「 𝗧𝗲𝗮𝗺 𝗦𝗺𝗶𝘁𝗵 𝗕𝗼𝘁 」==\n━━━━━━━━━━━━━━━\n%2`,
         "notHavePermssion": '𝗠𝗢𝗗𝗘 - Bạn không đủ quyền hạn để có thể sử dụng chức năng "%1"',
         "addedNewAdmin": '𝗠𝗢𝗗𝗘 - Đã thêm thành công %1 người dùng trở thành Admin Bot\n\n%2',
       "addedNewNDH": '𝗠𝗢𝗗𝗘 - Đã thêm thành công %1 người dùng trở thành Người hỗ trợ\n\n%2',
@@ -67,7 +67,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
             for (const idAdmin of listAdmin) {
                 if (parseInt(idAdmin)) {
                   const name = (await Users.getData(idAdmin)).name
-                    msg.push(`𝗧𝗲̂𝗻: ${name}\n» 𝗟𝗶𝗻𝗸 𝗙𝗕: https://www.facebook.com/${idAdmin} 💌`);
+                    msg.push(`𝗦𝗺𝗶𝘁𝗵 𝗝𝘂𝗻𝗶𝗼𝗿: ${name}\n» 𝗟𝗶𝗻𝗸 𝗙𝗕: https://www.facebook.com/${idAdmin} 💌`);
                 }
             }
           listNDH = NDH || config.NDH ||  [];
@@ -75,7 +75,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
             for (const idNDH of listNDH) {
                 if (parseInt(idNDH)) {
                   const name1 = (await Users.getData(idNDH)).name
-                    msg1.push(`𝗧𝗲̂𝗻: ${name1}\n» 𝗟𝗶𝗻𝗸 𝗙𝗕: https://www.facebook.com/${idNDH} 🤖`);
+                    msg1.push(`𝗧𝗲𝗮𝗺 𝗦𝗺𝗶𝘁𝗵: ${name1}\n» 𝗟𝗶𝗻𝗸 𝗙𝗕: https://www.facebook.com/${idNDH} 🤖`);
                 }
             }
 
@@ -235,10 +235,10 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
           if (permssion != 3) return api.sendMessage("𝗠𝗢𝗗𝗘 - 𝗕𝗼𝗿𝗱𝗲𝗿 𝗰𝗮𝗻𝗴𝗹𝗲 𝗿𝗶𝗴𝗵𝘁𝘀 🎀 ", threadID, messageID);
             if (config.adminOnly == false) {
                 config.adminOnly = true;
-                api.sendMessage(`𝗠𝗢𝗗𝗘 - 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗲𝗻𝗮𝗯𝗹𝗲 𝗔𝗱𝗺𝗶𝗻 𝗢𝗻𝗹𝘆 𝗺𝗼𝗱𝗲, 𝗼𝗻𝗹𝘆 𝗮𝗱𝗺𝗶𝗻𝘀 𝗰𝗮𝗻 𝘂𝘀𝗲 𝗯𝗼𝘁𝘀 👑`, threadID, messageID);
+                api.sendMessage(`𝗠𝗢𝗗𝗘 - 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗲𝗻𝗮𝗯𝗹𝗲 𝗔𝗱𝗺𝗶𝗻 𝗢𝗻𝗹𝘆 𝗺𝗼𝗱𝗲, 𝗼𝗻𝗹𝘆 𝗧𝗲𝗮𝗺 𝘀𝗺𝗶𝘁𝗵 𝗰𝗮𝗻 𝘂𝘀𝗲 𝗯𝗼𝘁 👑`, threadID, messageID);
             } else {
                 config.adminOnly = false;
-                api.sendMessage(`𝗠𝗢𝗗𝗘 - 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗱𝗶𝘀𝗮𝗯𝗹𝗲 𝗔𝗱𝗺𝗶𝗻 𝗢𝗻𝗹𝘆 𝗺𝗼𝗱𝗲, 𝗲𝘃𝗲𝗿𝘆𝗼𝗻𝗲 𝗰𝗮𝗻 𝘂𝘀𝗲 𝘁𝗵𝗲 𝗯𝗼𝘁 👑`, threadID, messageID);
+                api.sendMessage(`𝗠𝗢𝗗𝗘 - 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗱𝗶𝘀𝗮𝗯𝗹𝗲 𝗔𝗱𝗺𝗶𝗻 𝗢𝗻𝗹𝘆 𝗺𝗼𝗱𝗲, 𝗲𝘃𝗲𝗿𝘆𝗼𝗻𝗲 𝗰𝗮𝗻 𝘂𝘀𝗲 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗼𝗻𝗹𝘆 𝗯𝗲𝗮𝗰𝗼𝘂𝘀𝗲 𝗼𝗳 𝗧𝗲𝗮𝗺 𝗦𝗺𝗶𝘁𝗵👑`, threadID, messageID);
             }
                 writeFileSync(configPath, JSON.stringify(config, null, 4), 'utf8');
                 break;
