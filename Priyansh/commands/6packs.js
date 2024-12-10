@@ -2,7 +2,7 @@ module.exports.config = {
   name: "6mui",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+  credits: "Lord Junior",
   description: "Random 6-pack photos",
   commandCategory: "Random-IMG",
   usages: "6mui",
