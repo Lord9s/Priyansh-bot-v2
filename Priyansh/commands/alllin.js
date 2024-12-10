@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "setallbox",
   version: "1.0.9",
 	hasPermssion: 1,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+	credits: "𝗝𝗮𝘆𝗱𝗲𝗻 𝗦𝗺𝗶𝘁𝗵",
 	description: "Change something of group",
 	commandCategory: "box",
 	usages: "set [emoji/avt/Bname/name/QTV/rcolor] [args]",
