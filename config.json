@@ -11,13 +11,13 @@
         "sim.js"
     ],
     "eventDisabled": [
-        "join.js"
+        ""
     ],
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
     "BOTNAME": "lord-auto.onrender.com",
-    "PREFIX": "/",
+    "PREFIX": ".",
     "ADMINBOT": [
         "61560050885709"
     ],
