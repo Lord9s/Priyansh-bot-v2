@@ -1,5 +1,5 @@
  module.exports.config = {
-	name: "help",
+	name: "help2",
 	version: "1.0.2",
 	hasPermssion: 0,
 	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
