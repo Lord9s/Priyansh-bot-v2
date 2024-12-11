@@ -54,7 +54,7 @@ module.exports. run = function({ api, event, args, getText }) {
 	if (!command) {
 		const arrayInfo = [];
 		const page = parseInt(args[0]) || 1;
-    const numberOfOnePage = 10;
+    const numberOfOnePage = 15;
     //*số thứ tự 1 2 3.....cú pháp ${++i}*//
     let i = 0;
     let msg = "";
