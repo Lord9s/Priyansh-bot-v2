@@ -8,21 +8,21 @@
     "allowInbox": false,
     "autoClean": true,
     "commandDisabled": [
-        "sim.js"
+        ""
     ],
     "eventDisabled": [
-        "join.js"
+        ""
     ],
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "Your-Father",
-    "PREFIX": "/",
+    "BOTNAME": "ก็็็็็็็็็็็็ʕ•͡ᴥ•ก็็็็็็็็็",
+    "PREFIX": ".",
     "ADMINBOT": [
-        "100037743553265"
+        "61560050885709"
     ],
     "NDH": [
-        "100037743553265"
+        "61557703289417"
     ],
     "DATABASE": {
         "sqlite": {
